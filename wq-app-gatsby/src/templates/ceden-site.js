@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from "react"
-import { graphql, navigate } from "gatsby"
+import { graphql, navigate, withPrefix } from "gatsby"
 import Layout from "../components/layout"
 import {
   Grid,
@@ -192,7 +192,7 @@ export default ({ data, pageContext }) => {
               selection
               defaultValue={siteData.StationCode}
               options={siteOptions}
-              onChange={(e, data) => navigate(`ceden-site/${data.value}`)}
+              onChange={(e, data) => navigate(`/ceden-site/${data.value}`)}
             />
           </GridColumn>
         </Grid>

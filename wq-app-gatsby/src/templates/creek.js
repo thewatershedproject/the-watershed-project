@@ -78,8 +78,16 @@ export default ({ data, pageContext }) => {
             {creekImage === defaultImage ? (
               <Image src={defaultImage} size="large"></Image>
             ) : (
-              <a href={creekImage.imageURL} target="_blank" rel="noopener noreferrer">
-                <Image src={creekImage.imageURL} alt={creekImage.altText} size="large"></Image>
+              <a
+                href={creekImage.imageURL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={creekImage.imageURL}
+                  alt={creekImage.altText}
+                  size="large"
+                ></Image>
               </a>
             )}
 
@@ -154,7 +162,7 @@ export default ({ data, pageContext }) => {
                     fluid
                     selection
                     options={siteOptions}
-                    onChange={(e, data) => navigate(`site/${data.value}`)}
+                    onChange={(e, data) => navigate(`/site/${data.value}`)}
                   />
 
                   <h3 className={creekStyles.header2}>Explore Other Creeks</h3>
@@ -163,7 +171,7 @@ export default ({ data, pageContext }) => {
                     fluid
                     selection
                     options={creekOptions}
-                    onChange={(e, data) => navigate(`creek/${data.value}`)}
+                    onChange={(e, data) => navigate(`/creek/${data.value}`)}
                     defaultValue={pageContext.creekID}
                   />
                 </GridColumn>
