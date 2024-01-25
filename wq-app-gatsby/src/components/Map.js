@@ -45,7 +45,10 @@ class MapBox extends React.Component {
           paint: {
             "fill-color": {
               property: "twp_monito",
-              stops: [[0, "#fff"], [1, "#999"]],
+              stops: [
+                [0, "#fff"],
+                [1, "#999"],
+              ],
             },
             "fill-opacity": 0.2,
             "fill-outline-color": "#000",
@@ -70,7 +73,7 @@ class MapBox extends React.Component {
 
       this.map.on("click", "watersheds-layer", e => {
         if (e.features[0].properties.twp_monito === 1) {
-          navigate(`creek/${e.features[0].properties.creek_id}`)
+          navigate(`/creek/${e.features[0].properties.creek_id}`)
         }
       })
 
@@ -85,13 +88,11 @@ class MapBox extends React.Component {
           pt.source === "The Watershed Project"
             ? mapStyles.marker1
             : mapStyles.marker2
-            
-        return(
-          new mapboxgl.Marker(el)
+
+        return new mapboxgl.Marker(el)
           .setLngLat([pt.long, pt.lat])
           .setPopup(popup)
           .addTo(this.map)
-        )
       })
     })
 

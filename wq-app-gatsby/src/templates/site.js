@@ -288,28 +288,36 @@ export default ({ data, pageContext }) => {
             ])
         : null
 
-    const imageTab = selectedImage ? 
-      {
-        menuItem: "Images",
-        render: () => (
-          <Tab.Pane attached={false}>
-            <a
-              href={selectedImage.imageURL}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image src={selectedImage.imageURL} alt={selectedImage.altText}></Image>
-            </a>
-            <Divider hidden />
-            <Image.Group size="tiny">
-              {images.map(image => (
-                <Image src={image.imageURL} alt={image.altText} onClick={() => setImage(image)} />
-              ))}
-            </Image.Group>
-            <Divider hidden />
-          </Tab.Pane>
-        ),
-      } : null
+    const imageTab = selectedImage
+      ? {
+          menuItem: "Images",
+          render: () => (
+            <Tab.Pane attached={false}>
+              <a
+                href={selectedImage.imageURL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={selectedImage.imageURL}
+                  alt={selectedImage.altText}
+                ></Image>
+              </a>
+              <Divider hidden />
+              <Image.Group size="tiny">
+                {images.map(image => (
+                  <Image
+                    src={image.imageURL}
+                    alt={image.altText}
+                    onClick={() => setImage(image)}
+                  />
+                ))}
+              </Image.Group>
+              <Divider hidden />
+            </Tab.Pane>
+          ),
+        }
+      : null
 
     panes = [
       {
@@ -376,7 +384,7 @@ export default ({ data, pageContext }) => {
           </Tab.Pane>
         ),
       },
-      imageTab
+      imageTab,
     ]
   } else {
     panes = null
@@ -417,7 +425,7 @@ export default ({ data, pageContext }) => {
               selection
               defaultValue={siteData.site_id}
               options={siteOptions}
-              onChange={(e, data) => navigate(`site/${data.value}`)}
+              onChange={(e, data) => navigate(`/site/${data.value}`)}
             />
           </GridColumn>
           <GridColumn width={10}>
