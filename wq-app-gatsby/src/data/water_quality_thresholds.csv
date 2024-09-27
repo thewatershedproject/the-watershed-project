@@ -4,7 +4,7 @@ pH,Vitals,between,6.5,8.5,none,https://www.epa.gov/sites/production/files/2014-1
 Specific Conductivity,Vitals,between,150,500,uS/cm,https://archive.epa.gov/water/archive/web/html/vms59.html,USEPA Conductivity Threshold,NA
 Temperature,Vitals,below,24,NA,°C,https://www.waterboards.ca.gov/water_issues/programs/tmdl/records/region_1/2008/ref2509.doc,California Water Boards Temperature Threshold,"This is the maximum temperature tolerated by salmonids, although they tend to avoid waters that are over 20 degrees C."
 Turbidity,Vitals,below,25,NA,NTU,https://www.valleywater.org/sites/default/files/D5_Reports%20and%20Docs/D5_CCCH%20Watershed%20Project.pdf,Turbidity Threshold,"Turbidity Threshold derived from this publication: Sigler, J. W., T.C. Bjornn, and F.H. Everest. 1984. Effects of chronic turbidity on density and growth of steelhead and coho salmon. Transactions of the American Fisheries Society 113:142-150."
-Nitrate,Nutrients,below,0.5,NA,mg/L,NA,Revital Katznelson (formerly SWAMP),"This threshold is based on the potential for eutrophication, rather than direct nitrate toxicity."
+Nitrate,Nutrients,below,45,NA,mg/L,NA,Revital Katznelson (formerly SWAMP),"This threshold is based on the potential for eutrophication, rather than direct nitrate toxicity."
 Nitrite,Nutrients,below,Same as nitrate?,NA,NA,NA,NA,NA
 Ammonium,Nutrients,below,17,NA,mg/L,https://www.federalregister.gov/documents/2013/08/22/2013-20307/final-aquatic-life-ambient-water-quality-criteria-for-ammonia-freshwater-2013,USEPA Ammonia Threshold,1 hour average at pH 7 and 20 degrees C
 Phosphates,Nutrients,below,0.05,NA,mg/L,http://fosc.org/WQData/WQParameters.htm,Phosphate Threshold,NA
