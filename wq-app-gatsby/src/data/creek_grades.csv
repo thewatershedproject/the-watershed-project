@@ -1,10 +1,13 @@
 creek_id,total,max,grade,letter_grade
-ALH,6,10,60,D-
+ALH,7,10,70,C-
 GAL,5,8,62.5,D-
 HOB,6,8,75,C
+LAG,6,8,75,C
 MDB,5,8,62.5,D-
+MOR,6,8,75,C
 MSH,5,8,62.5,D-
 PIN,6,10,60,D-
+SLE,6,8,75,C
 SPA,7,10,70,C-
 SRA,8,10,80,B-
 SUP,7,10,70,C-
